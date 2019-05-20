@@ -70,9 +70,13 @@ sudo add-apt-repository --yes ppa:nilarimogard/webupd8
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
 
+# For Papirus
+sudo add-apt-repository ppa:papirus/papirus
+
 # Done adding sources at this point.
 $INSTALL apt-transport-https
 sudo apt update
+sudo apt-get upgrade
 
 
 # ----- Browsers -----
@@ -186,6 +190,9 @@ $INSTALL nodejs
 #wget -qO- https://get.docker.com/ | sh
 #sudo usermod -aG docker `whoami`
 
+#Papirus
+$INSTALL papirus-icon-theme
+
 # Other settings
 #rsync -av "$IMPORTABLE_SETTINGS_FOLDER/Linux/Mint/" "$HOME/"
 
@@ -251,7 +258,7 @@ xbindkeys
 
 # ----- Virtualization ------
 #$INSTALL dosbox
-#$INSTALL dkms build-essential linux-headers-`uname -r`
+$INSTALL dkms build-essential linux-headers-`uname -r`
 #$INSTALL virtualbox-6.0
 
 
