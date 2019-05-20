@@ -1,11 +1,11 @@
 #Linux Mint new instalation  
 downlad the instaltion.sh
 and in terminal type
-'''bash
+```bash
 sudo chmod +x install.sh
-'''
+```
 then
-'''bash
+```bash
 sudo ./install.sh
-'''
+```
 
