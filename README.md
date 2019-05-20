@@ -1,6 +1,8 @@
-#Linux Mint new instalation  
-downlad the instaltion.sh
-and in terminal type
+# Linux Mint new instalation
+
+download the instaltion.sh
+
+and in terminal type in terminal
 ```bash
 sudo chmod +x install.sh
 ```
